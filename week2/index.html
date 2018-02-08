@@ -26,7 +26,7 @@
         <div class="wrapper">
             <h2 class="section-title">Новинки</h2>
             <div class="new-items">
-                <div class="new-item">
+                <div class="catalog-item">
                     <img src="img/bottle-left.jpg" alt="Вахтер" width="319" height="459">
                     <table class="item-facts">
                         <tr>
@@ -45,7 +45,7 @@
                     <a class="btn btn-buy" href="#">Купить</a>
                     <b>150 Р.</b>
                 </div>
-                <div class="new-item">
+                <div class="catalog-item">
                     <img src="img/bottle-right.jpg" alt="Романтик" width="319" height="459">
                     <table class="item-facts">
                         <tr>
@@ -69,7 +69,7 @@
     </div>
     <div class="features">
         <div class="wrapper">
-            <ul class="feature-list">
+            <ul class="feature-list clearfix">
                 <li class="feature-item feature-brew">
                     <h2 class="feature-title">Варим сами</h2>
                     <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
@@ -85,7 +85,7 @@
             </ul>
         </div>
     </div>
-    <div class="history" id="history">
+    <div class="reference" id="history">
         <div class="wrapper">
             <h2 class="section-title">Немного истории</h2>
             <dl>
@@ -121,7 +121,7 @@
     <div class="price-list" id="price-list">
         <div class="wrapper">
             <h2 class="section-title">Ассортимент</h2>
-            <table>
+            <table class="price-table">
                 <tr>
                     <th>Название</th>
                     <th>Алк.</th>
@@ -160,11 +160,11 @@
             </table>
         </div>
     </div>
-    <div class="order" id="order">
+    <div class="order">
         <div class="wrapper">
             <h2 class="section-title">Заказать</h2>
             <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей &#8212; скидка 10%.</p>
-            <form>
+            <form action="/place-order" class="order-form" method="post">
                 <div class="order-form-group">
                     <label for="name">Представьтесь:</label>
                     <input type="text" name="name" id="name" placeholder="Как мы можем к вам обращаться?">
